@@ -113,12 +113,10 @@ export default {
   },
   mounted() {
     this.loading = true
-    if (!this.$route.query.Authority) {
-      this.handleLoadMore();
-    }
+    this.events = []
+    this.handleLoadMore();
+
     //let vm = this
-
-
 
 
   },

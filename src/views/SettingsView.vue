@@ -106,7 +106,8 @@ export default {
       await axios.post('settings', {
         settings: vm.settings
       }).then((response) => {
-        console.log(response)
+
+        vm.$toaster.info(response.data)
 
       })
 
